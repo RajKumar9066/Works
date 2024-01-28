@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Freight-big-pro, serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  background-color: #000;
+}
+#loader {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 99;
+  /* display: "none"; */
+}
+#loader h1 {
+  font-size: 6.9vw;
+  font-weight: 100;
+  line-height: 5vw;
+  position: relative;
+  letter-spacing: -3px;
+  z-index: 9;
+}
+#loader video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 6;
+}
+#yellow1 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #f5e41b;
+  z-index: 8;
+}
+#yellow2 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #f5e41b;
+  z-index: 7;
+}
+#nav {
+  position: absolute;
+  width: 100%;
+  /* background-color: aquamarine; */
+  z-index: 10;
+  padding: 30px 50px;
+}
+#nav svg path {
+  fill: #000;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#page1 h1 {
+  font-size: 6.9vw;
+  font-weight: 200;
+  line-height: 5vw;
+  letter-spacing: -3px;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.elem {
+  /* background-color: red; */
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.elem .blur {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #f5e31bf5, #f5e41b, #f5e31be2);
+  box-shadow: -10px 0px 20px #f5e41b;
+  height: 100%;
+  z-index: 8;
+}
+.elem h2 {
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 5vw;
+  position: relative;
+  z-index: 9;
+}
+.elem .moving {
+  background-color: #f5e41b;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%) scaleY(0);
+  padding: 5px 0;
+  transition: all ease 0.3s;
+}
+.elem .moving .moving-in {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: moving;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.elem .moving .moving-in h5 {
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all ease 0.3s;
+  /* opacity: 0; */
+  transition-delay: 0.2s;
+  font-family: gilroy;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+@keyframes moving {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.elem:hover .moving {
+  transform: translate(0, -45%) scaleY(1);
+}
+.elem:hover .moving {
+  opacity: 1;
+}
+.elem:hover h2 {
+  font-style: italic;
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+.image-container {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.image-div {
+  height: 40vw;
+  width: 30vw;
+  position: relative;
+  margin: 40px 20px;
+  overflow: hidden;
+}
+.image-div img {
+  height: 100%;
+  transition: all ease 0.5s;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #0000001e;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all ease 0.5s;
+  z-index: 9;
+}
+.overlay p {
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  line-height: 2.5vw;
+  transition: all ease 0.5s;
+  opacity: 0;
+}
+.image-div:hover .overlay {
+  background-color: #000;
+}
+.image-div:hover .overlay p {
+  opacity: 1;
+}
+.image-div:hover img {
+  scale: 1.1;
+}
+#footer {
+  height: 40vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer #foot {
+  height: 50%;
+  width: 100%;
+  background-color: #000;
+}
+#footer h2 {
+  font-family: gilory;
+  text-transform: uppercase;
+  font-size: 1vw;
+  cursor: pointer;
+}
