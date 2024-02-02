@@ -44,14 +44,14 @@ body {
   height: 100%;
   position: absolute;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: #C21292;
   z-index: 8;
 }
 #yellow2 {
   height: 100%;
   position: absolute;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: #C21292;
   z-index: 7;
 }
 #nav {
@@ -67,7 +67,7 @@ body {
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: #f5e41b;
+  background-color: #f72bc0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,8 +105,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to right, #f5e31bf5, #f5e41b, #f5e31be2);
-  box-shadow: -10px 0px 20px #f5e41b;
+  background: linear-gradient(to right, #7d30e1f1, #C21292, #7d30e1ea);
+  box-shadow: -10px 0px 20px #7E30E1;
   height: 100%;
   z-index: 8;
 }
@@ -119,7 +119,7 @@ body {
   z-index: 9;
 }
 .elem .moving {
-  background-color: #f5e41b;
+  background-color: #C21292;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
