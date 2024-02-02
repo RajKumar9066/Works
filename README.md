@@ -10,7 +10,7 @@ I have designed this website using HTML, CSS and JavaScript to learn Locomotive 
 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Demo video](#demo)
+- [Demo video](https://youtu.be/yApOnKbxrZU)
 - [Contact](elvishraj90662gmail.com)
 
 ## Technologies Used
